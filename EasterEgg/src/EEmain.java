@@ -3,26 +3,25 @@ import java.util.Scanner;
 public class EEmain {
 
 	public static void main(String[] args) {
-		System.out.println("Program is running. ")
+		System.out.println("Program is running.");
 		Scanner stdIn = new Scanner(System.in);
 	
-		System.out.println("Type c c s to trigger an Easter Egg");
+		System.out.println("What is our group name?");
 		boolean bingo = false;
 		do {
-			char first = stdIn.nextChar();
-			char second = stdIn.nextChar();	
-			char third = stdIn.nextChar();
-			if (first == 'c' && second == 'c' && third = 's') {
+			String trigger = stdIn.next();
+			if (trigger.equalsIgnoreCase("ccs")) {
 				bingo = true;
-			} else {
-				bingo = false;
 			}
+			bingo = false;
+			
 		} while (bingo = false);
+		System.out.println("BINGO!!!");
 		display();
-
+		stdIn.close();
 	}
 	
-	private void display() {
+	private static void display() {
 		System.out.println("The Crazy Code Surgeons - CCS");
 		
 		
