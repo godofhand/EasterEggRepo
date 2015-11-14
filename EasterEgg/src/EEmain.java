@@ -23,7 +23,7 @@ public class EEmain {
 	
 	private static void display() {
 		System.out.println("The Crazy Code Surgeons - CCS");
-		
+		System.out.println("Test, Scott");
 		
 	}
 
